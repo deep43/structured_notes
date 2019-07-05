@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dashBoard/DashBoard.dart';
+import 'package:animated_splash/animated_splash.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -13,5 +14,13 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: "Structured Notes",
         home: new Material(child: new Container(child: new DashBoard())));
+        /*home:AnimatedSplash(
+          imagePath: 'assets/images/appletouchstartupimage.png',
+          home: Material(child: new Container(child: new DashBoard())),
+          duration: 2500,
+          type: AnimatedSplashType.StaticDuration,
+//          outputAndHome: op,
+        ),*/
+    //);
   }
 }
